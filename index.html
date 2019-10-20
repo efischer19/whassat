@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="Description" content="Multilingual object detection, &lt;6MB. Works offline.">
+
+    <title>What's That?</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles.css" media="all">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-TileColor" content="#54457f">
+    <meta name="theme-color" content="#54457f">
+
+    <script src="/scripts/register-service-worker.js" async></script>
+    <link rel="preload" href="/scripts/web-worker.js" as="script">
+    <script src="/scripts/worker-interface.js" defer></script>
+    <script src="/scripts/start-camera.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Whassat?</h1>
+      <p>Multilingual object detection, &lt;6MB. Works offline.</p>
+    </header>
+    <main>
+    <div id="videobox">
+      <video autoplay></video>
+      <canvas></canvas>
+    </div>
+    <h2>
+      <span id="waiting-label">
+        Loading model, please wait...
+      </span>
+      <span id="no-compat" style="display:none;">
+        <p>This code isn't going to work for you, sorry</p>
+        <p>It relies on the <a href="https://developer.mozilla.org/en-US/docs/Web/API/OffscreenCanvas">OffscreenCanvas Web API</a>, and your browser doesn't support it. Try with Chrome!</p>
+        <p>For more details, see <a href="https://developers.google.com/web/updates/2018/08/offscreen-canvas">this Google blog post</a> or <a href="https://caniuse.com/#feat=offscreencanvas">the latest browser support tables</a></p>
+      </span>
+    </h2>
+    <div id="lang-select">
+      <span class="text-select">
+        <label for="text-select">Text:</label>
+        <select id="text-select">
+          <option value="ar">Arabic</option>
+          <option value="de">German</option>
+          <option value="el">Greek</option>
+          <option value="en" selected=true>English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="it">Italian</option>
+          <option value="nl">Dutch</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="tr">Turkish</option>
+          <option value="zh">Chinese</option>
+        </select>
+      </span>
+      <span class="audio-select">
+        <label for="audio-select">Audio:</label>
+        <select id="audio-select">
+          <option value="" selected=true>OFF</option>
+          <option value="ar">Arabic</option>
+          <option value="de">German</option>
+          <option value="el">Greek</option>
+          <option value="en">English</option>
+          <option value="es">Spanish</option>
+          <option value="fr">French</option>
+          <option value="it">Italian</option>
+          <option value="nl">Dutch</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="tr">Turkish</option>
+          <option value="zh">Chinese</option>
+        </select>
+      </span>
+    </div>
+    </main>
+    <footer>
+      <a href="https://github.com/efischer19/whassat">Source</a>
+      <a href="mailto:contact@whassat.info">Contact</a>
+    </footer>
+  </body>
+</html>
