@@ -1,4 +1,4 @@
-# Whassat
+# [whassat.info](https://whassat.info)
 
 Multilingual object detection, &lt;6MB. Works offline.
 
