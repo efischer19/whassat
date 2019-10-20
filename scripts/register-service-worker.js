@@ -8,5 +8,5 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-// I'm not doing anything fancy, if the A2HS prompt fires go for it
+// I'm not doing anything fancy, if the add to home screen prompt fires go for it
 window.addEventListener('beforeinstallprompt', function(e) {e.prompt();});
