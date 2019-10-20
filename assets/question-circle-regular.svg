@@ -1,0 +1,69 @@
+<svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="question-circle" class="svg-inline--fa fa-question-circle fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- license: https://fontawesome.com/license, on FA as question-circle-->
+  <!-- modified by me for colors and readability -->
+  <defs>
+    <radialGradient id="markGradient" cx="50%" cy="50%" r="80%" fx="45%" fy="25%">
+      <stop offset="0%"   stop-color="#ce6c47" />
+      <stop offset="100%" stop-color="#960200" />
+    </radialGradient>
+    <radialGradient id="circleGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="75%">
+      <stop offset="10%"   stop-color="#54457f" />
+      <stop offset="100%"  stop-color="#241e4e" />
+    </radialGradient>
+  </defs>
+  <path
+    fill="url(#circleGradient)"
+    d=" M 256 8
+        C 119.043 8 8
+          119.083 8 256
+        c 0 136.997 111.043
+          248 248 248
+        s 248-111.003
+          248-248
+        C 504 119.083 392.957
+          8 256 8
+        z">
+  </path>
+  <path
+    fill="url(#markGradient)"
+    d=" M 256 456
+        m 107.244-255.2
+        c 0 67.052-72.421
+          68.084-72.421 92.863
+        V 300
+        c 0 6.627-5.373
+          12-12 12
+        h -45.647
+        c -6.627 0-12
+          -5.373-12-12
+        v -8.659
+        c 0-35.745 27.1
+          -50.034 47.579-61.516
+          17.561-9.845 28.324
+          -16.541 28.324-29.579
+          0-17.246-21.999
+          -28.693-39.784-28.693
+          -23.189 0-33.894
+          10.977-48.942 29.969
+          -4.057 5.12-11.46
+          6.071-16.666 2.124
+        l -27.824-21.098
+        c -5.107-3.872-6.251
+          -11.066-2.644-16.363
+        C 184.846 131.491 214.94
+          112 261.794 112
+        c 49.071 0 101.45
+          38.304 101.45 88.8
+        z
+        M 298 368
+        c 0 23.159-18.841
+          42-42 42
+        s -42-18.841
+          -42-42
+          18.841-42
+          42-42
+          42 18.841
+          42 42
+        z">
+  </path>
+</svg>
