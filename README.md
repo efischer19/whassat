@@ -1,5 +1,7 @@
 # [whassat.info](https://whassat.info)
 
+![Demo screenshot](Screenshot.png)
+
 Multilingual object detection, &lt;6MB. Works offline.
 
 So yeah, this is a thing I made. It's a fully static website being served from s3, set up in such a way as to be an installable Progressive Web App, and all the code it uses fits in under six megabytes - well within the limits of modern service worker caching guidelines.
